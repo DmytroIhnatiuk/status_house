@@ -1,0 +1,22 @@
+header,
+.header {
+	position: absolute;
+	background: var(--header-gradient);
+	.menu {
+		background: var(--accent-gradient);
+
+		@media all and (min-width: 1024px) {
+			background: none;
+		}
+	}
+
+	&.active {
+		.menu {
+			transform: translateX(0);
+			z-index: -1;
+		}
+		.active-none {
+			display: none !important;
+		}
+	}
+}

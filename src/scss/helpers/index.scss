@@ -1,0 +1,39 @@
+@import 'h';
+
+.btn-transition {
+	transition: background 0.35s linear;
+	span {
+		transition: color 0.35s linear;
+	}
+}
+.icon-hover {
+	@media all and (min-width: 1024px) {
+		&:hover {
+			background: var(--white);
+			svg {
+				stroke: black !important;
+			}
+		}
+	}
+}
+.header-hidden {
+	transform: translateY(-100%);
+}
+.hover-advantages {
+	&:hover {
+		.bg-img {
+			opacity: 1;
+		}
+		p {
+			transition: all 0.35s linear 0.35s;
+			max-height: 1.2rem;
+		}
+	}
+}
+@media all and (min-width: 1024px) {
+	.advantages {
+		.swiper-wrapper {
+			width: auto !important;
+		}
+	}
+}

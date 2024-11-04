@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.nav-list {
+		@apply lg:mr-32 last:mr-0 mb-32 lg:mb-0 border-b border-transparent border-solid lg:hover:border-white transition-[border] duration-300 ease-linear last:mb-[.8rem] lg:last:mb-0;
+	}
+}

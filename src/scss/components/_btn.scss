@@ -1,0 +1,24 @@
+.btn-gradient {
+	background: linear-gradient(268deg, #b3a39a 9.38%, #807168 67.51%);
+	transition: box-shadow 0.35s linear;
+	position: relative;
+	z-index: 5;
+	&:hover {
+		box-shadow: 0px 10px 10px 0px rgba(49, 45, 43, 0.15);
+		&::before {
+			opacity: 0;
+		}
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: linear-gradient(94deg, #a5958c 11.52%, #948379 63.16%);
+		z-index: -5;
+		border-radius: 0.3rem;
+		transition: opacity 0.35s linear;
+	}
+}

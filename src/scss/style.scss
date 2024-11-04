@@ -1,0 +1,108 @@
+@use 'sass:math';
+@import 'tailwind';
+@import 'helpers';
+@import 'fonts';
+
+body {
+	margin: 0;
+	line-height: normal;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overscroll-behavior: none;
+	min-height: -webkit-fill-available;
+	background: var(--light-grey);
+	font-size: var(--txt-m);
+	font-family: 'AvenirNextCyr';
+	font-weight: 400;
+	color: var(--black);
+	&.fixed,
+	&.overlay {
+		&::before {
+			// opacity: 1;
+			// z-index: 5;
+		}
+	}
+
+	&.overlay {
+		&::before {
+			z-index: 8;
+		}
+	}
+
+	&.active {
+		overflow: hidden;
+		touch-action: none;
+		&::before {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	.page-container {
+		min-height: 100vh;
+		// position: relative;
+		overflow: clip;
+		display: flex;
+		flex-direction: column;
+	}
+
+	main {
+		flex-grow: 1;
+	}
+
+	#loom-companion-mv3 {
+		display: none;
+	}
+
+	footer {
+		flex-shrink: 0;
+	}
+	.promo {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: var(
+				--tint-1,
+				linear-gradient(
+					180deg,
+					rgba(49, 45, 43, 0.2) 0%,
+					rgba(49, 45, 43, 0.7) 100%
+				)
+			);
+			width: 100%;
+			height: 100%;
+			display: none;
+			@media all and (min-width: 640px) {
+				display: block;
+			}
+		}
+	}
+	.promo-bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		animation: zoomAnimation 8s linear forwards;
+		z-index: -1;
+	}
+	@keyframes zoomAnimation {
+		0% {
+			transform: scale(1);
+		}
+		100% {
+			transform: scale(1.2);
+		}
+	}
+}
+
+@import 'base';
+@import 'components';
+@import 'pages';
