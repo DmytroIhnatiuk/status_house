@@ -4,7 +4,6 @@ import {translateFields} from "./base.js";
 import {getElement} from "../core/index.js";
 
 
-
 export default function modalsEvents(target) {
     if (!modal) return;
     switch (target) {
