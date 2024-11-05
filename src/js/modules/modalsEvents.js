@@ -1,10 +1,8 @@
-import {modalBody, modal} from "../core/elementsNodeList.js";
+import { modal} from "../core/elementsNodeList.js";
 import Form from "./Form.js";
-import {translateFields, lang} from "./base.js";
-import {getElement, getElements} from "../core/index.js";
-import {copyText} from "./helpers.js";
-import Modal from "./modal.js";
-import {removeActive} from "../core/classesEvents.js";
+import {translateFields} from "./base.js";
+import {getElement} from "../core/index.js";
+
 
 
 export default function modalsEvents(target) {
