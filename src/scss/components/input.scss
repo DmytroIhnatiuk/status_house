@@ -1,0 +1,78 @@
+.form-item {
+  display: flex;
+  flex-direction: column;
+  font-size: .14rem;
+  position: relative;
+
+
+
+  input,
+  textarea,
+  {
+
+    transition: background-color .35s linear, border-color .35s linear, color .35s linear;
+    width: 100%;
+    cursor: text;
+
+
+    &:focus, &:focus-visible {
+
+    }
+
+    @media all and (max-width: 767px) {
+      font-size: 16px;
+    }
+
+  }
+
+  textarea {
+    resize: none;
+    height: gem(180);
+  }
+
+  &.disabled {
+    input, textarea {
+      pointer-events: none;
+      opacity: .75;
+    }
+  }
+
+
+  &.invalid {
+    color: var(--error);
+
+    input, textarea {
+      border-color: var(--error);
+
+    }
+
+    .invalid {
+      opacity: 1;
+      visibility: visible;
+      width: .16rem;
+    }
+  }
+
+
+
+  &__message {
+    padding-top: .02rem;
+    position: absolute;
+    height: gem(22);
+    line-height: gem(16);
+    font-size: gem(12);
+    bottom: gem(-22);
+  }
+
+}
+
+input {
+  &.disabled {
+    opacity: .8;
+  }
+}
+
+
+
+
+

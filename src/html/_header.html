@@ -1,73 +1,74 @@
 <header
-	class="h-[var(--header-height)] py-24 mt-auto flex items-end z-50 w-full transition-transform duration-500 top-0 right-0 left-0"
+        class="h-[var(--header-height)] py-24 mt-auto flex items-end z-50 w-full transition-transform duration-500 top-0 right-0 left-0"
 >
-	<div class="container flex items-center justify-between">
-		<a href="index.html" class="w-[1.85rem] sm:w-[2.05rem] block relative z-10">
-			<img src="@img/logo.png" alt="logo" />
-		</a>
-		<div
-			class="menu absolute lg:relative p-[.7rem] h-[7.3rem] w-[3.75rem] lg:w-auto lg:h-auto accent-gradient right-0 lg:p-0 top-0 flex flex-col items-center justify-center lg:flex-row translate-x-full lg:translate-x-0 transition-transform duration-300"
-		>
-			<nav class="lg:mr-[.54rem]">
-				<ul
-					class="flex flex-col items-center lg:flex-row text-white uppercase text-l lg:text-s"
-				>
-					<li class="nav-list">
-						<a href="#">Про нас</a>
-					</li>
-					<li class="nav-list">
-						<a href="#">Проєкти</a>
-					</li>
-					<li class="nav-list">
-						<a href="#">наші послуги</a>
-					</li>
-					<li class="nav-list">
-						<a href="#">Контакти</a>
-					</li>
-				</ul>
-			</nav>
-			<button
-				class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] w-[2.33rem] border border-white border-solid px-16 py-12 text-white font-medium bg-transparent hover:bg-white hover:text-black btn-transition lg:mr-12 mb-32 lg:mb-0"
-			>
-				<span>Отримати консультацію</span>
-			</button>
-			<div class="flex">
-				<a
-					href="#"
-					class="size-[.32rem] rounded border border-solid border-white flex items-center justify-center icon-hover lg:hidden mr-24"
-				>
-					<svg
-						class="size-24 fill-none stroke-[var(--white)] transition-[stroke] duration-[.35s] ease-linear"
-					>
-						<use href="#phone-icon"></use>
-					</svg>
-				</a>
-				<a
-					href="#"
-					class="size-[.32rem] lg:size-[.43rem] rounded border border-solid border-white flex items-center justify-center icon-hover"
-				>
-					<svg
-						class="size-24 fill-none stroke-[var(--white)] transition-[stroke] duration-[.35s] ease-linear"
-					>
-						<use href="#instagram-icon"></use>
-					</svg>
-				</a>
-			</div>
-		</div>
-		<div class="flex lg:hidden">
-			<a
-				href="#"
-				class="size-[.32rem] rounded border border-solid border-white flex items-center justify-center icon-hover active-none mr-8"
-			>
-				<svg
-					class="size-24 fill-none stroke-[var(--white)] transition-[stroke] duration-[.35s] ease-linear"
-				>
-					<use href="#phone-icon"></use>
-				</svg>
-			</a>
-			<button class="burger">
-				<div class="line"></div>
-			</button>
-		</div>
-	</div>
+    <div class="container flex items-center justify-between">
+        <a href="index.html" class="w-[1.85rem] sm:w-[2.05rem] block relative z-10">
+            <img src="@img/logo.png" alt="logo"/>
+        </a>
+        <div
+                class="menu absolute lg:relative p-[.7rem] h-[7.3rem] w-[3.75rem] lg:w-auto lg:h-auto accent-gradient right-0 lg:p-0 top-0 flex flex-col items-center justify-center lg:flex-row translate-x-full lg:translate-x-0 transition-transform duration-300"
+        >
+            <nav class="lg:mr-[.54rem]">
+                <ul
+                        class="flex flex-col items-center lg:flex-row text-white uppercase text-l lg:text-s"
+                >
+                    <li class="nav-list">
+                        <a href="#">Про нас</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">Проєкти</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">наші послуги</a>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <button
+                    data-modal="callback"
+                    class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] w-[2.33rem] border border-white border-solid px-16 py-12 text-white font-medium bg-transparent hover:bg-white hover:text-black btn-transition lg:mr-12 mb-32 lg:mb-0"
+            >
+                <span>Отримати консультацію</span>
+            </button>
+            <div class="flex">
+                <a
+                        href="#"
+                        class="size-[.32rem] rounded border border-solid border-white flex items-center justify-center icon-hover lg:hidden mr-24"
+                >
+                    <svg
+                            class="size-24 fill-none stroke-[var(--white)] transition-[stroke] duration-[.35s] ease-linear"
+                    >
+                        <use href="#phone-icon"></use>
+                    </svg>
+                </a>
+                <a
+                        href="#"
+                        class="size-[.32rem] lg:size-[.43rem] rounded border border-solid border-white flex items-center justify-center icon-hover"
+                >
+                    <svg
+                            class="size-24 fill-none stroke-[var(--white)] transition-[stroke] duration-[.35s] ease-linear"
+                    >
+                        <use href="#instagram-icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="flex lg:hidden">
+            <a
+                    href="#"
+                    class="size-[.32rem] rounded border border-solid border-white flex items-center justify-center icon-hover active-none mr-8"
+            >
+                <svg
+                        class="size-24 fill-none stroke-[var(--white)] transition-[stroke] duration-[.35s] ease-linear"
+                >
+                    <use href="#phone-icon"></use>
+                </svg>
+            </a>
+            <button class="burger">
+                <div class="line"></div>
+            </button>
+        </div>
+    </div>
 </header>

@@ -89,7 +89,9 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"aos": "^2.3.4",
 		"gulp-cheerio": "^1.0.0",
+		"imask": "^7.6.1",
 		"isotope-layout": "^3.0.6",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",

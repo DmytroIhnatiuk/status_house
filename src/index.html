@@ -1,913 +1,934 @@
 <!doctype html>
 <html lang="ua">
-	@@include('html/_head.html',{ "title":"HomePage" })
-	<body class="body">
-		<div class="page-container">
-			@@include('html/_header.html',{})
-			<main>
-				<section
-					class="lg:h-[100vh] h-[6.7rem] sm:h-[8rem] pt-[var(--header-height)] pb-[var(--section-padding)] promo relative flex items-end overflow-hidden"
-				>
-					<div class="container">
-						<picture>
-							<source srcset="@img/promo_bg.png" media="(min-width: 640px)" />
-							<img
-								src="@img/promo_bg_sm.jpg"
-								alt="Promo Background"
-								class="promo-bg"
-							/>
-						</picture>
-						<div
-							class="lg:flex text-white justify-between w-full py-24 border-t border-light-grey border-solid relative z-10"
-						>
-							<h1 class="max-w-[8rem] mb-16 lg:mb-0">
-								Будуємо не будинки,
-								<span class="sm:block font-bold">а ваш особистий простір</span>
-							</h1>
-							<button
-								class="text-s w-[2.48rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient"
-							>
-								<span>Отримати консультацію</span>
-							</button>
-						</div>
-					</div>
-				</section>
-				<section class="sm:py-[1.3rem] py-[1rem]">
-					<div class="container">
-						<div class="flex justify-between mb-32">
-							<h2 class="h3 font-medium max-w-[4.5rem] lg:max-w-[6rem]">
-								Status House – ваш шлях до сучасного будинку
-							</h2>
-							<button
-								class="text-s sm:flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition lg:mr-12 mb-32 lg:mb-0 mt-auto hidden"
-							>
-								<span>про компанію </span>
-							</button>
-						</div>
-						<div class="grid lg:grid-cols-2 gap-20 mb-32 sm:mb-0">
-							<div>
-								<div class="font-medium mb-16">
-									Status House займається будівництвом із використанням новітніх
-									технологій та матеріалів. Ми пропонуємо повний комплекс
-									послуг, починаючи з проектування і закінчуючи введенням в
-									експлуатацію готового об’єкта.
-								</div>
-								<div class="mb-36">
-									Наша команда досвідчених фахівців допоможе втілити в життя
-									будь-який проект – від мінімалістичного будинку до розкішної
-									резиденції. Обираючи Status House, ви отримуєте гарантію
-									якості, естетики та сучасного підходу до будівництва.
-								</div>
-								<div class="sm:flex max-w-[6rem]">
-									<div
-										class="pr-12 sm:border-r border-b border-black border-solid sm:mr-24 pb-8 mb-24 lg:mb-0 sm:border-b-transparent"
-									>
-										<div class="text-[.52rem] font-medium">12+</div>
-										<span class="text-l">Років досвіду у сфері</span>
-									</div>
-									<div
-										class="pr-12 sm:border-r border-b sm:border-b-transparent border-black border-solid sm:mr-24 pb-8 mb-24 lg:mb-0"
-									>
-										<div class="text-[.52rem] font-medium">360</div>
-										<span class="text-l">Проєктів побудовано</span>
-									</div>
-									<div class="pb-8 mb-24 lg:mb-0">
-										<div class="text-[.52rem] font-medium">30+</div>
-										<span class="text-l">Проєктів будуємо щороку</span>
-									</div>
-								</div>
-							</div>
-							<div class="image w-full h-[2.55rem] sm:h-[3.77rem]">
-								<img src="@img/white_house.png" alt="white_house" />
-							</div>
-						</div>
-						<button
-							class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition lg:mr-12 mt-auto sm:hidden w-full"
-						>
-							<span>про компанію </span>
-						</button>
-					</div>
-				</section>
-				<section>
-					<div class="video">
-						<img src="@img/video.png" alt="video" />
-						<svg
-							class="size-[.48rem] sm:size-[.83rem] fill-white absolute duration-[.35s] top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 ease-linear border border-white border-solid rounded lg:hover:opacity-50"
-						>
-							<use href="#play-icon"></use>
-						</svg>
-					</div>
-				</section>
-				<section>
-					<div
-						class="container pt-[1rem] sm:pt[1.3rem] pb-[var(--section-padding)]"
-					>
-						<div class="flex justify-between mb-32">
-							<h2 class="h3 font-medium max-w-[4.5rem] lg:max-w-[6rem]">
-								Наші проєкти
-							</h2>
-							<button
-								class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition lg:mr-12 mb-32 lg:mb-0 mt-auto min-w-max"
-							>
-								<span>Більше проєктів </span>
-							</button>
-						</div>
-						<div class="swiper mb-36" data-swiper="projects">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
-										<div
-											class="image h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
-										>
-											<img src="@img/slider_house_1.png" alt="house" />
-											<div
-												class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
-											>
-												<div
-													class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
-												>
-													Плюти, Київська область
-												</div>
-												<div class="text-s text-white">2024</div>
-											</div>
-										</div>
-										<div class="col-start-6 col-end-9 hidden lg:block">
-											<div class="image h-[1.84rem] mb-12">
-												<img src="@img/slider_house_2.png" alt="house" />
-											</div>
-											<div class="image h-[1.84rem]">
-												<img src="@img/slider_house_3.png" alt="house" />
-											</div>
-										</div>
-										<div
-											class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
-										>
-											<div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Площа</span>
-													<div class="h3 font-medium">340 м²</div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Локація</span>
-													<div class="h3 font-medium">Плюти </div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Рік забудови</span>
-													<div class="h3 font-medium">2024</div>
-												</div>
-											</div>
-											<a
-												href="#"
-												class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
-											>
-												Більше про проєкт
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
-										<div
-											class="image h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
-										>
-											<img src="@img/slider_house_1.png" alt="house" />
-											<div
-												class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
-											>
-												<div
-													class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
-												>
-													Плюти, Київська область
-												</div>
-												<div class="text-s text-white">2024</div>
-											</div>
-										</div>
-										<div class="col-start-6 col-end-9 hidden lg:block">
-											<div class="image h-[1.84rem] mb-12">
-												<img src="@img/slider_house_2.png" alt="house" />
-											</div>
-											<div class="image h-[1.84rem]">
-												<img src="@img/slider_house_3.png" alt="house" />
-											</div>
-										</div>
-										<div
-											class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
-										>
-											<div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Площа</span>
-													<div class="h3 font-medium">340 м²</div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Локація</span>
-													<div class="h3 font-medium">Плюти </div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Рік забудови</span>
-													<div class="h3 font-medium">2024</div>
-												</div>
-											</div>
-											<a
-												href="#"
-												class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
-											>
-												Більше про проєкт
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
-										<div
-											class="image h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
-										>
-											<img src="@img/slider_house_1.png" alt="house" />
-											<div
-												class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
-											>
-												<div
-													class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
-												>
-													Плюти, Київська область
-												</div>
-												<div class="text-s text-white">2024</div>
-											</div>
-										</div>
-										<div class="col-start-6 col-end-9 hidden lg:block">
-											<div class="image h-[1.84rem] mb-12">
-												<img src="@img/slider_house_2.png" alt="house" />
-											</div>
-											<div class="image h-[1.84rem]">
-												<img src="@img/slider_house_3.png" alt="house" />
-											</div>
-										</div>
-										<div
-											class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
-										>
-											<div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Площа</span>
-													<div class="h3 font-medium">340 м²</div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Локація</span>
-													<div class="h3 font-medium">Плюти </div>
-												</div>
-												<div
-													class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
-												>
-													<span class="text-s">Рік забудови</span>
-													<div class="h3 font-medium">2024</div>
-												</div>
-											</div>
-											<a
-												href="#"
-												class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
-											>
-												Більше про проєкт
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="flex gap-20 justify-center">
-							<button
-								class="size-[.48rem] sm:size-[.62rem] border border-black border-solid rounded flex justify-center items-center projects-prev lg:hover:opacity-70 transition-opacity"
-							>
-								<svg
-									class="size-24 flex justify-center items-center fill-none stroke-[var(--black)] rotate-180"
-								>
-									<use href="#shevron-icon"></use>
-								</svg>
-							</button>
-							<button
-								class="size-[.48rem] sm:size-[.62rem] border border-black border-solid rounded flex justify-center items-center projects-next lg:hover:opacity-70 transition-opacity"
-							>
-								<svg
-									class="size-24 flex justify-center items-center fill-none stroke-[var(--black)]"
-								>
-									<use href="#shevron-icon"></use>
-								</svg>
-							</button>
-						</div>
-					</div>
-				</section>
-				<section class="pt-[var(--section-padding)] pb-[1.3rem] sm-[1.8rem]">
-					<div class="container">
-						<h2
-							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
-						>
-							Зробіть перший крок! Залиште свої контактні дані і отримайте
-							розрахунок кошторису
-						</h2>
-						<form action="#">
-							<div
-								class="flex flex-wrap justify-center lg:max-w-[11.35rem] mx-auto gap-16"
-							>
-								<div class="flex flex-col w-[2.85rem]">
-									<label for="name" class="text-s mb-4"> Ім’я</label>
-									<input
-										type="text"
-										name="name"
-										id="name"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-								</div>
-								<div class="flex flex-col w-[2.85rem]">
-									<label for="phone_1" class="text-s mb-4">
-										Номер телефона</label
-									>
-									<input
-										type="text"
-										name="phone_1 "
-										id="phone_1"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-								</div>
-								<div class="flex flex-col w-[2.85rem]">
-									<label for="mail" class="text-s mb-4"> E-mail</label>
-									<input
-										type="text"
-										name="mail"
-										id="mail"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-								</div>
-								<button
-									class="text-s w-[2.85rem] lg:w-[2.3rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient mt-auto"
-								>
-									<span>залишити заявку</span>
-								</button>
-							</div>
-						</form>
-					</div>
-				</section>
-				<section class="bg-black py-[.6rem] cm:pt-[1rem] text-white">
-					<div class="container">
-						<div class="flex justify-between mb-32 lg:mb-48">
-							<h2
-								class="h3 text-white font-medium max-w-[4.5rem] lg:max-w-[6rem]"
-							>
-								Основні послуги
-							</h2>
-							<button
-								class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-white border-solid px-16 py-12 text-white font-medium bg-transparent hover:bg-white hover:text-black btn-transition lg:mr-12 mb-32 lg:mb-0 mt-auto min-w-max"
-							>
-								<span>Дізнатися більше </span>
-							</button>
-						</div>
-						<div
-							class="border-t border-accent border-solid py-24 grid lg:grid-cols-2 gap-20"
-						>
-							<div class="flex lg:justify-between">
-								<div class="text-l font-medium mr-12">01</div>
-								<div class="lg:w-[4.4rem]">
-									<h4 class="font-bold mb-24">Підготовчі роботи</h4>
-									<ul class="font-medium">
-										<li class="flex">
+@@include('html/_head.html',{ "title":"HomePage" })
+<body class="body">
+<div class="page-container">
+    @@include('html/_header.html',{})
+    <main>
+        <section
+                class="lg:h-[100vh] h-[6.7rem] sm:h-[8rem] pt-[var(--header-height)] pb-[var(--section-padding)] promo relative flex items-end overflow-hidden"
+        >
+            <div class="container">
+                <picture>
+                    <source srcset="@img/promo_bg.png" media="(min-width: 640px)"/>
+                    <img
+                            src="@img/promo_bg_sm.jpg"
+                            alt="Promo Background"
+                            class="promo-bg"
+                    />
+                </picture>
+                <div
+
+                        class="lg:flex text-white justify-between w-full py-24 border-t border-light-grey border-solid relative z-10"
+                >
+                    <h1
+                            data-aos="fade-up"
+
+                            data-aos-delay="500"
+                            class="max-w-[8rem] mb-16 lg:mb-0"
+                    >
+                        Будуємо не будинки,
+                        <span class="sm:block font-bold">а ваш особистий простір</span>
+                    </h1>
+                    <div
+
+                            data-aos-delay="600"
+                            data-aos="fade-up">
+                        <button
+                                data-modal="callback"
+
+                                class="text-s w-[2.48rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient"
+                        >
+                            <span>Отримати консультацію</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="sm:py-[1.3rem] py-[1rem]">
+            <div class="container">
+                <div data-aos="fade-up" class="flex justify-between mb-32">
+                    <h2 class="h3 font-medium max-w-[4.5rem] lg:max-w-[6rem]">
+                        Status House – ваш шлях до сучасного будинку
+                    </h2>
+                    <button
+                            class="text-s sm:flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition lg:mr-12 mb-32 lg:mb-0 mt-auto hidden"
+                    >
+                        <span>про компанію </span>
+                    </button>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-20 mb-32 sm:mb-0">
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div class="font-medium mb-16">
+                            Status House займається будівництвом із використанням новітніх
+                            технологій та матеріалів. Ми пропонуємо повний комплекс
+                            послуг, починаючи з проектування і закінчуючи введенням в
+                            експлуатацію готового об’єкта.
+                        </div>
+                        <div class="mb-36">
+                            Наша команда досвідчених фахівців допоможе втілити в життя
+                            будь-який проект – від мінімалістичного будинку до розкішної
+                            резиденції. Обираючи Status House, ви отримуєте гарантію
+                            якості, естетики та сучасного підходу до будівництва.
+                        </div>
+                        <div class="sm:flex max-w-[6rem]">
+                            <div
+
+                                    class="pr-12 sm:border-r border-b border-black border-solid sm:mr-24 pb-8 mb-24 lg:mb-0 sm:border-b-transparent"
+                            >
+                                <div class="text-[.52rem] font-medium">12+</div>
+                                <span class="text-l">Років досвіду у сфері</span>
+                            </div>
+                            <div
+
+                                    class="pr-12 sm:border-r border-b sm:border-b-transparent border-black border-solid sm:mr-24 pb-8 mb-24 lg:mb-0"
+                            >
+                                <div class="text-[.52rem] font-medium">360</div>
+                                <span class="text-l">Проєктів побудовано</span>
+                            </div>
+                            <div
+
+                                    class="pb-8 mb-24 lg:mb-0">
+                                <div class="text-[.52rem] font-medium">30+</div>
+                                <span class="text-l">Проєктів будуємо щороку</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="image w-full h-[2.55rem] sm:h-[3.77rem]">
+                        <img src="@img/white_house.png" alt="white_house"/>
+                    </div>
+                </div>
+                <button
+                        class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition lg:mr-12 mt-auto sm:hidden w-full"
+                >
+                    <span>про компанію </span>
+                </button>
+            </div>
+        </section>
+        <section data-aos="fade-up">
+            <div class="video">
+                <img src="@img/video.png" alt="video"/>
+                <svg
+                        class="size-[.48rem] sm:size-[.83rem] fill-white absolute duration-[.35s] top-1/2 right-1/2 translate-x-1/2 -translate-y-1/2 ease-linear border border-white border-solid rounded lg:hover:opacity-50"
+                >
+                    <use href="#play-icon"></use>
+                </svg>
+            </div>
+        </section>
+        <section>
+            <div
+                    class="container pt-[1rem] sm:pt[1.3rem] pb-[var(--section-padding)]"
+            >
+                <div data-aos="fade-up" data-aos-delay="200" class="flex justify-between mb-32">
+                    <h2 class="h3 font-medium max-w-[4.5rem] lg:max-w-[6rem]">
+                        Наші проєкти
+                    </h2>
+                    <button
+                            class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition lg:mr-12 mb-32 lg:mb-0 mt-auto min-w-max"
+                    >
+                        <span>Більше проєктів </span>
+                    </button>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="swiper mb-36" data-swiper="projects">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
+                                <div
+                                        class="image h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
+                                >
+                                    <img src="@img/slider_house_1.png" alt="house"/>
+                                    <div
+                                            class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
+                                    >
+                                        <div
+                                                class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
+                                        >
+                                            Плюти, Київська область
+                                        </div>
+                                        <div class="text-s text-white">2024</div>
+                                    </div>
+                                </div>
+                                <div class="col-start-6 col-end-9 hidden lg:block">
+                                    <div class="image h-[1.84rem] mb-12">
+                                        <img src="@img/slider_house_2.png" alt="house"/>
+                                    </div>
+                                    <div class="image h-[1.84rem]">
+                                        <img src="@img/slider_house_3.png" alt="house"/>
+                                    </div>
+                                </div>
+                                <div
+                                        class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
+                                >
+                                    <div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Площа</span>
+                                            <div class="h3 font-medium">340 м²</div>
+                                        </div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Локація</span>
+                                            <div class="h3 font-medium">Плюти </div>
+                                        </div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Рік забудови</span>
+                                            <div class="h3 font-medium">2024</div>
+                                        </div>
+                                    </div>
+                                    <a
+                                            href="#"
+                                            class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
+                                    >
+                                        Більше про проєкт
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
+                                <div
+                                        class="image h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
+                                >
+                                    <img src="@img/slider_house_1.png" alt="house"/>
+                                    <div
+                                            class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
+                                    >
+                                        <div
+                                                class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
+                                        >
+                                            Плюти, Київська область
+                                        </div>
+                                        <div class="text-s text-white">2024</div>
+                                    </div>
+                                </div>
+                                <div class="col-start-6 col-end-9 hidden lg:block">
+                                    <div class="image h-[1.84rem] mb-12">
+                                        <img src="@img/slider_house_2.png" alt="house"/>
+                                    </div>
+                                    <div class="image h-[1.84rem]">
+                                        <img src="@img/slider_house_3.png" alt="house"/>
+                                    </div>
+                                </div>
+                                <div
+                                        class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
+                                >
+                                    <div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Площа</span>
+                                            <div class="h3 font-medium">340 м²</div>
+                                        </div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Локація</span>
+                                            <div class="h3 font-medium">Плюти </div>
+                                        </div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Рік забудови</span>
+                                            <div class="h3 font-medium">2024</div>
+                                        </div>
+                                    </div>
+                                    <a
+                                            href="#"
+                                            class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
+                                    >
+                                        Більше про проєкт
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="grid grid-cols-1 sm:grid-cols-12 gap-20">
+                                <div
+                                        class="image h-[3.8rem] col-start-1 sm:col-end-8 lg:col-end-6 relative"
+                                >
+                                    <img src="@img/slider_house_1.png" alt="house"/>
+                                    <div
+                                            class="flex justify-between absolute bottom-16 right-16 left-16 items-center"
+                                    >
+                                        <div
+                                                class="text-s px-12 py-4 border border-white border-solid rounded-30 text-white"
+                                        >
+                                            Плюти, Київська область
+                                        </div>
+                                        <div class="text-s text-white">2024</div>
+                                    </div>
+                                </div>
+                                <div class="col-start-6 col-end-9 hidden lg:block">
+                                    <div class="image h-[1.84rem] mb-12">
+                                        <img src="@img/slider_house_2.png" alt="house"/>
+                                    </div>
+                                    <div class="image h-[1.84rem]">
+                                        <img src="@img/slider_house_3.png" alt="house"/>
+                                    </div>
+                                </div>
+                                <div
+                                        class="lg:col-start-9 sm:col-start-8 sm:col-end-13 flex flex-col justify-end"
+                                >
+                                    <div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Площа</span>
+                                            <div class="h3 font-medium">340 м²</div>
+                                        </div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Локація</span>
+                                            <div class="h3 font-medium">Плюти </div>
+                                        </div>
+                                        <div
+                                                class="flex justify-between items-end pb-8 border-b border-accent border-solid mb-24"
+                                        >
+                                            <span class="text-s">Рік забудови</span>
+                                            <div class="h3 font-medium">2024</div>
+                                        </div>
+                                    </div>
+                                    <a
+                                            href="#"
+                                            class="text-s font-bold border-b border-black border-solid hover:border-transparent max-w-max mx-auto sm:ml-0"
+                                    >
+                                        Більше про проєкт
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-20 justify-center">
+                    <button
+                            class="size-[.48rem] sm:size-[.62rem] border border-black border-solid rounded flex justify-center items-center projects-prev lg:hover:opacity-70 transition-opacity"
+                    >
+                        <svg
+                                class="size-24 flex justify-center items-center fill-none stroke-[var(--black)] rotate-180"
+                        >
+                            <use href="#shevron-icon"></use>
+                        </svg>
+                    </button>
+                    <button
+                            class="size-[.48rem] sm:size-[.62rem] border border-black border-solid rounded flex justify-center items-center projects-next lg:hover:opacity-70 transition-opacity"
+                    >
+                        <svg
+                                class="size-24 flex justify-center items-center fill-none stroke-[var(--black)]"
+                        >
+                            <use href="#shevron-icon"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" data-aos-delay="200" class="pt-[var(--section-padding)] pb-[1.3rem] sm-[1.8rem]">
+            <div class="container">
+                <h2
+                        class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
+                >
+                    Зробіть перший крок! Залиште свої контактні дані і отримайте
+                    розрахунок кошторису
+                </h2>
+                <form action="#">
+                    <div
+                            class="flex flex-wrap justify-center lg:max-w-[11.35rem] mx-auto gap-16"
+                    >
+                        <div class="flex flex-col w-[2.85rem]">
+                            <label for="name" class="text-s mb-4"> Ім’я</label>
+                            <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+                            />
+                        </div>
+                        <div class="flex flex-col w-[2.85rem]">
+                            <label for="phone_1" class="text-s mb-4">
+                                Номер телефона</label
+                            >
+                            <input
+                                    type="text"
+                                    name="phone_1 "
+                                    id="phone_1"
+                                    class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+                            />
+                        </div>
+                        <div class="flex flex-col w-[2.85rem]">
+                            <label for="mail" class="text-s mb-4"> E-mail</label>
+                            <input
+                                    type="text"
+                                    name="mail"
+                                    id="mail"
+                                    class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+                            />
+                        </div>
+                        <button
+                                class="text-s w-[2.85rem] lg:w-[2.3rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient mt-auto"
+                        >
+                            <span>залишити заявку</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="bg-black py-[.6rem] cm:pt-[1rem] text-white">
+            <div class="container">
+                <div data-aos="fade-up" data-aos-delay="200" class="flex justify-between mb-32 lg:mb-48">
+                    <h2
+                            class="h3 text-white font-medium max-w-[4.5rem] lg:max-w-[6rem]"
+                    >
+                        Основні послуги
+                    </h2>
+                    <button
+                            class="text-s flex items-center justify-center uppercase rounded-30 h-[.43rem] border border-white border-solid px-16 py-12 text-white font-medium bg-transparent hover:bg-white hover:text-black btn-transition lg:mr-12 mb-32 lg:mb-0 mt-auto min-w-max"
+                    >
+                        <span>Дізнатися більше </span>
+                    </button>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200"
+                     class="border-t border-accent border-solid py-24 grid lg:grid-cols-2 gap-20"
+                >
+                    <div class="flex lg:justify-between">
+                        <div class="text-l font-medium mr-12">01</div>
+                        <div class="lg:w-[4.4rem]">
+                            <h4 class="font-bold mb-24">Підготовчі роботи</h4>
+                            <ul class="font-medium">
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Геологія та геодезія
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Геологія та геодезія
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Посадка будинку на ділянці
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Посадка будинку на ділянці
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Планування ділянки
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Планування ділянки
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Улаштування котловану
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="image sm:h-[3.8rem] h-[1.94rem]">
-								<img src="@img/Project 1.png" alt="Project" />
-							</div>
-						</div>
-						<div
-							class="border-t border-accent border-solid py-24 grid lg:grid-cols-2 gap-20"
-						>
-							<div class="flex lg:justify-between">
-								<div class="text-l font-medium mr-12">02</div>
-								<div class="lg:w-[4.4rem]">
-									<h4 class="font-bold mb-24">Проєктування</h4>
-									<ul class="font-medium">
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Улаштування котловану
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="image sm:h-[3.8rem] h-[1.94rem]">
+                        <img src="@img/Project 1.png" alt="Project"/>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200"
+                     class="border-t border-accent border-solid py-24 grid lg:grid-cols-2 gap-20"
+                >
+                    <div class="flex lg:justify-between">
+                        <div class="text-l font-medium mr-12">02</div>
+                        <div class="lg:w-[4.4rem]">
+                            <h4 class="font-bold mb-24">Проєктування</h4>
+                            <ul class="font-medium">
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Ескізний проєкт
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Ескізний проєкт
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Архітектурно-будівельний проєкт
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Архітектурно-будівельний проєкт
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Ландшафтний проєкт
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Ландшафтний проєкт
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Проєкт комунікацій
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Проєкт комунікацій
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Стилістичне рішення
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Стилістичне рішення
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>3D візуалізація
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >3D візуалізація
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span>
-											Добірка меблів
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span>
+                                    Добірка меблів
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Плани керування електроустаткуванням
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Плани керування електроустаткуванням
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span>
-											Підготовка кошторису та розрахунок бюджету
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span>
+                                    Підготовка кошторису та розрахунок бюджету
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Консультації з енергоефективності та екологічності
-											проекту
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="image sm:h-[3.8rem] h-[1.94rem]">
-								<img src="@img/Project 2.png" alt="Project" />
-							</div>
-						</div>
-						<div
-							class="border-t border-accent border-solid py-24 grid lg:grid-cols-2 gap-20"
-						>
-							<div class="flex lg:justify-between">
-								<div class="text-l font-medium mr-12">03</div>
-								<div class="lg:w-[4.4rem]">
-									<h4 class="font-bold mb-24">Будівництво</h4>
-									<ul class="font-medium">
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Консультації з енергоефективності та екологічності
+                                    проекту
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="image sm:h-[3.8rem] h-[1.94rem]">
+                        <img src="@img/Project 2.png" alt="Project"/>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200"
+                     class="border-t border-accent border-solid py-24 grid lg:grid-cols-2 gap-20"
+                >
+                    <div class="flex lg:justify-between">
+                        <div class="text-l font-medium mr-12">03</div>
+                        <div class="lg:w-[4.4rem]">
+                            <h4 class="font-bold mb-24">Будівництво</h4>
+                            <ul class="font-medium">
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Загальнобудівельні роботи
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Загальнобудівельні роботи
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Внутрішнє та зовнішнє оздоблення
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Внутрішнє та зовнішнє оздоблення
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Зовнішні та внутрішні комунікації
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Зовнішні та внутрішні комунікації
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Ландшафтні роботи
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Ландшафтні роботи
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Басейни
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Басейни
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>СПА-комплекси
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >СПА-комплекси
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span>
-											Системи енергозбереження (сонячні панелі, теплові насоси)
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span>
+                                    Системи енергозбереження (сонячні панелі, теплові насоси)
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span
-											>Установка систем безпеки (відеоспостереження,
-											сигналізація)
-										</li>
-										<li class="flex">
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span
+                                            >Установка систем безпеки (відеоспостереження,
+                                    сигналізація)
+                                </li>
+                                <li class="flex">
 											<span
-												class="size-6 rounded bg-white block mr-8 my-auto"
-											></span>
-											Автоматизація і системи «розумний дім»
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="image sm:h-[3.8rem] h-[1.94rem]">
-								<img src="@img/Project 3.png" alt="Project" />
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="pt-100 sm:pt-[1.5rem]">
-					<div class="container">
-						<div class="flex flex-wrap justify-between mb-32 lg:mb-50">
-							<h2
-								class="h3 font-medium max-w-[4.5rem] mb-32 lg:mb-0 lg:max-w-[6rem]"
-							>
-								Реалізація проєкту
-							</h2>
-							<div class="font-medium max-w-[7.85rem]">
-								Компанія Status House виконує комплексно або на вибір:
-								управління проектом, генпідряд, будівельні та оздоблювальні
-								роботи, комплектацію об'єктів матеріалами, обладнанням, меблями.
-								При будівництві "під ключ" будинок буде обладнаний усім
-								необхідним – вам залишається лише доповнити його індивідуальними
-								деталями на власний смак.
-							</div>
-						</div>
-						<div class="grid sm:grid-cols-3 gap-20">
-							<div
-								class="sm:col-start-1 sm:col-end-3 lg:col-start-1 lg:col-end-2"
-							>
-								<div class="image sm:h-[2.6rem] h-[2rem] mb-16">
-									<img src="@img/box.png" alt="house" />
-								</div>
-								<div class="h4 font-bold text-center">Коробка</div>
-							</div>
-							<div
-								class="sm:col-start-2 sm:col-end-4 lg:col-start-2 lg:col-end-3"
-							>
-								<div class="image sm:h-[2.6rem] h-[2rem] mb-16">
-									<img src="@img/finish.png" alt="house" />
-								</div>
-								<div class="h4 font-bold text-center">
-									Під чистове оздоблення
-								</div>
-							</div>
-							<div
-								class="sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-4"
-							>
-								<div class="image sm:h-[2.6rem] h-[2rem] mb-16">
-									<img src="@img/Turnkey.png" alt="house" />
-								</div>
-								<div class="h4 font-bold text-center">Під ключ</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="py-[1.3rem] sm:py-[1.8rem]">
-					<div class="container">
-						<h2
-							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
-						>
-							Зробіть перший крок! Залиште свої контактні дані і отримайте
-							розрахунок кошторису
-						</h2>
-						<form action="#">
-							<div
-								class="flex flex-wrap justify-center lg:max-w-[11.35rem] mx-auto gap-16"
-							>
-								<div class="flex flex-col w-[2.85rem]">
-									<label for="name" class="text-s mb-4"> Ім’я</label>
-									<input
-										type="text"
-										name="name"
-										id="name"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-								</div>
-								<div class="flex flex-col w-[2.85rem]">
-									<label for="phone_1" class="text-s mb-4">
-										Номер телефона</label
-									>
-									<input
-										type="text"
-										name="phone_1 "
-										id="phone_1"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-								</div>
-								<div class="flex flex-col w-[2.85rem]">
-									<label for="mail" class="text-s mb-4"> E-mail</label>
-									<input
-										type="text"
-										name="mail"
-										id="mail"
-										class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
-									/>
-								</div>
-								<button
-									class="text-s w-[2.85rem] lg:w-[2.3rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient mt-auto"
-								>
-									<span>залишити заявку</span>
-								</button>
-							</div>
-						</form>
-					</div>
-				</section>
-				<section class="relative h-[6.68rem] sm:h-[7.1rem] text-white">
-					<h2
-						class="absolute z-10 top-50 sm:top-[.75rem] font-medium left-[var(--container-gap)]"
-					>
-						Переваги компанії
-					</h2>
-					<div
-						class="flex gap-20 justify-center absolute bottom-24 w-full z-20"
-					>
-						<button
-							class="size-[.48rem] sm:size-[.62rem] border border-white border-solid rounded flex justify-center items-center advantages-prev lg:hover:opacity-70 transition-opacity"
-						>
-							<svg
-								class="size-24 flex justify-center items-center fill-none stroke-[var(--white)] rotate-180"
-							>
-								<use href="#shevron-icon"></use>
-							</svg>
-						</button>
-						<button
-							class="size-[.48rem] sm:size-[.62rem] border border-white border-solid rounded flex justify-center items-center advantages-next lg:hover:opacity-70 transition-opacity"
-						>
-							<svg
-								class="size-24 flex justify-center items-center fill-none stroke-[var(--white)]"
-							>
-								<use href="#shevron-icon"></use>
-							</svg>
-						</button>
-					</div>
-					<div
-						class="h-full lg:flex swiper advantages"
-						data-swiper="advantages"
-					>
-						<div class="swiper-wrapper lg:px-[var(--container-gap)] w-[100vw]">
-							<div>
-								<div
-									class="bg-img hidden lg:block absolute -z-[5] top-0 right-0 bottom-0 left-0 w-full"
-								>
-									<img
-										class="object-cover size-full hidden lg:block"
-										src="@img/Advantages.png"
-										alt="#"
-									/>
-								</div>
-								<div
-									class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
-								>
-									<div class="h4 font-bold z-10">Дотримання термінів</div>
-									<p
-										class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
-									>
+                                                    class="size-6 rounded bg-white block mr-8 my-auto"
+                                            ></span>
+                                    Автоматизація і системи «розумний дім»
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="image sm:h-[3.8rem] h-[1.94rem]">
+                        <img src="@img/Project 3.png" alt="Project"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-100 sm:pt-[1.5rem]">
+            <div class="container">
+                <div data-aos="fade-up" class="flex flex-wrap justify-between mb-32 lg:mb-50">
+                    <h2
+                            class="h3 font-medium max-w-[4.5rem] mb-32 lg:mb-0 lg:max-w-[6rem]"
+                    >
+                        Реалізація проєкту
+                    </h2>
+                    <div class="font-medium max-w-[7.85rem]">
+                        Компанія Status House виконує комплексно або на вибір:
+                        управління проектом, генпідряд, будівельні та оздоблювальні
+                        роботи, комплектацію об'єктів матеріалами, обладнанням, меблями.
+                        При будівництві "під ключ" будинок буде обладнаний усім
+                        необхідним – вам залишається лише доповнити його індивідуальними
+                        деталями на власний смак.
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="grid sm:grid-cols-3 gap-20">
+                    <div
+                            class="sm:col-start-1 sm:col-end-3 lg:col-start-1 lg:col-end-2"
+                    >
+                        <div class="image sm:h-[2.6rem] h-[2rem] mb-16">
+                            <img src="@img/box.png" alt="house"/>
+                        </div>
+                        <div class="h4 font-bold text-center">Коробка</div>
+                    </div>
+                    <div
+                            class="sm:col-start-2 sm:col-end-4 lg:col-start-2 lg:col-end-3"
+                    >
+                        <div class="image sm:h-[2.6rem] h-[2rem] mb-16">
+                            <img src="@img/finish.png" alt="house"/>
+                        </div>
+                        <div class="h4 font-bold text-center">
+                            Під чистове оздоблення
+                        </div>
+                    </div>
+                    <div
+                            class="sm:col-start-1 sm:col-end-3 lg:col-start-3 lg:col-end-4"
+                    >
+                        <div class="image sm:h-[2.6rem] h-[2rem] mb-16">
+                            <img src="@img/Turnkey.png" alt="house"/>
+                        </div>
+                        <div class="h4 font-bold text-center">Під ключ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="fade-up" class="py-[1.3rem] sm:py-[1.8rem]">
+            <div class="container">
+                <h2
+                        class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
+                >
+                    Зробіть перший крок! Залиште свої контактні дані і отримайте
+                    розрахунок кошторису
+                </h2>
+                <form action="#">
+                    <div
+                            class="flex flex-wrap justify-center lg:max-w-[11.35rem] mx-auto gap-16"
+                    >
+                        <div class="flex flex-col w-[2.85rem]">
+                            <label for="name" class="text-s mb-4"> Ім’я</label>
+                            <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+                            />
+                        </div>
+                        <div class="flex flex-col w-[2.85rem]">
+                            <label for="phone_1" class="text-s mb-4">
+                                Номер телефона</label
+                            >
+                            <input
+                                    type="text"
+                                    name="phone_1 "
+                                    id="phone_1"
+                                    class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+                            />
+                        </div>
+                        <div class="flex flex-col w-[2.85rem]">
+                            <label for="mail" class="text-s mb-4"> E-mail</label>
+                            <input
+                                    type="text"
+                                    name="mail"
+                                    id="mail"
+                                    class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+                            />
+                        </div>
+                        <button
+                                class="text-s w-[2.85rem] lg:w-[2.3rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient mt-auto"
+                        >
+                            <span>залишити заявку</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section data-aos="fade-up"
+                 data-aos-duration="1200" class="relative h-[6.68rem] sm:h-[7.1rem] text-white">
+            <h2
+                    class="absolute z-10 top-50 sm:top-[.75rem] font-medium left-[var(--container-gap)]"
+            >
+                Переваги компанії
+            </h2>
+            <div
+                    class="flex gap-20 justify-center absolute bottom-24 w-full z-20"
+            >
+                <button
+                        class="size-[.48rem] sm:size-[.62rem] border border-white border-solid rounded flex justify-center items-center advantages-prev lg:hover:opacity-70 transition-opacity"
+                >
+                    <svg
+                            class="size-24 flex justify-center items-center fill-none stroke-[var(--white)] rotate-180"
+                    >
+                        <use href="#shevron-icon"></use>
+                    </svg>
+                </button>
+                <button
+                        class="size-[.48rem] sm:size-[.62rem] border border-white border-solid rounded flex justify-center items-center advantages-next lg:hover:opacity-70 transition-opacity"
+                >
+                    <svg
+                            class="size-24 flex justify-center items-center fill-none stroke-[var(--white)]"
+                    >
+                        <use href="#shevron-icon"></use>
+                    </svg>
+                </button>
+            </div>
+            <div
+                    class="h-full lg:flex swiper advantages"
+                    data-swiper="advantages"
+            >
+                <div class="swiper-wrapper lg:px-[var(--container-gap)] w-[100vw]">
+                    <div>
+                        <div
+                                class="bg-img hidden lg:block absolute -z-[5] top-0 right-0 bottom-0 left-0 w-full"
+                        >
+                            <img
+                                    class="object-cover size-full hidden lg:block"
+                                    src="@img/Advantages.png"
+                                    alt="#"
+                            />
+                        </div>
+                        <div
+                                class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
+                        >
+                            <div class="h4 font-bold z-10">Дотримання термінів</div>
+                            <p
+                                    class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
+                            >
 										<span class="block pt-16">
 											Ми дотримуємося договору та затвердженого кошторису,
 											термінів, не виставляємо неузгоджені платежі. За потреби
 											завжди пропонуємо вибір
 										</span>
-									</p>
-									<div
-										class="bg-img absolute lg:-z-[5] top-0 right-0 bottom-0 left-0 w-full lg:opacity-1 transition-opacity duration-500 ease-linear"
-									>
-										<img
-											class="object-cover size-full"
-											src="@img/Advantages.png"
-											alt="#"
-										/>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div
-									class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
-								>
-									<div class="h4 font-bold z-10">Гарантія</div>
-									<p
-										class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
-									>
+                            </p>
+                            <div
+                                    class="bg-img absolute lg:-z-[5] top-0 right-0 bottom-0 left-0 w-full lg:opacity-1 transition-opacity duration-500 ease-linear"
+                            >
+                                <img
+                                        class="object-cover size-full"
+                                        src="@img/Advantages.png"
+                                        alt="#"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                                class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
+                        >
+                            <div class="h4 font-bold z-10">Гарантія</div>
+                            <p
+                                    class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
+                            >
 										<span class="block pt-16">
 											Загальна гарантія – 5 років. Гарантія на конструкцію 10
 											років.
 										</span>
-									</p>
-									<div
-										class="bg-img absolute lg:-z-[5] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
-									>
-										<img
-											class="object-cover size-full"
-											src="@img/Advantages_2.png"
-											alt="#"
-										/>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div
-									class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
-								>
-									<div class="h4 font-bold z-10">Ціна</div>
-									<p
-										class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
-									>
+                            </p>
+                            <div
+                                    class="bg-img absolute lg:-z-[5] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
+                            >
+                                <img
+                                        class="object-cover size-full"
+                                        src="@img/Advantages_2.png"
+                                        alt="#"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                                class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
+                        >
+                            <div class="h4 font-bold z-10">Ціна</div>
+                            <p
+                                    class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
+                            >
 										<span class="block pt-16">
 											Ціна виправдана якістю робіт. Застосовуються лише якісні
 											матеріали та висока кваліфікація
 										</span>
-									</p>
-									<div
-										class="bg-img absolute lg:-z-[3] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
-									>
-										<img
-											class="object-cover size-full"
-											src="@img/Advantages_3.png"
-											alt="#"
-										/>
-									</div>
-								</div>
-							</div>
-							<div>
-								<div
-									class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end :w-[3.44rem] hover-advantages relative lg:static"
-								>
-									<div class="h4 font-bold z-10">Контроль</div>
-									<p
-										class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
-									>
+                            </p>
+                            <div
+                                    class="bg-img absolute lg:-z-[3] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
+                            >
+                                <img
+                                        class="object-cover size-full"
+                                        src="@img/Advantages_3.png"
+                                        alt="#"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                                class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end :w-[3.44rem] hover-advantages relative lg:static"
+                        >
+                            <div class="h4 font-bold z-10">Контроль</div>
+                            <p
+                                    class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
+                            >
 										<span class="block pt-16">
 											Забезпечуємо постійний дистанційний контроль за допомогою
 											відео, фотографій та трансляцій безпосередньо з
 											будівельного майданчика
 										</span>
-									</p>
-									<div
-										class="bg-img absolute lg:-z-[2] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
-									>
-										<img
-											class="object-cover size-full"
-											src="@img/Advantages_4.png"
-											alt="#"
-										/>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="py-[1.3rem] sm:py-[1.8rem]">
-					<div class="container">
-						<h2
-							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-20"
-						>
-							Наші партнери
-						</h2>
-						<div class="text-l text-center font-medium mb-32 lg:mb-50">
-							Кожен проект - це твір мистецтвазвичайно без допомоги Ми не
-							обходимося.
-						</div>
-						<ul
-							class="flex flex-wrap gap-x-[.4rem] lg:gap-x-[1.1rem] gap-y-16 justify-center"
-						>
-							<li class="flex items-center justify-center">
-								<a href="#">
-									<div class="w-[1.5rem] sm:w-[2rem] h-max">
-										<img
-											class="object-contain"
-											src="@img/logo_1.png"
-											alt="logo"
-										/>
-									</div>
-								</a>
-							</li>
-							<li class="flex items-center justify-center">
-								<a href="#">
-									<div class="w-[1.5rem] sm:w-[2rem] h-max">
-										<img
-											class="object-contain block"
-											src="@img/logo_2.png"
-											alt="logo"
-										/>
-									</div>
-								</a>
-							</li>
-							<li class="flex items-center justify-center">
-								<a href="#">
-									<div class="w-[1.5rem] sm:w-[2rem] h-max">
-										<img
-											class="object-contain"
-											src="@img/logo_3.png"
-											alt="logo"
-										/>
-									</div>
-								</a>
-							</li>
-							<li class="flex items-center justify-center">
-								<a href="#">
-									<div class="w-[1.5rem] sm:w-[2rem] h-max">
-										<img
-											class="object-contain"
-											src="@img/logo_4.png"
-											alt="logo"
-										/>
-									</div>
-								</a>
-							</li>
-							<li class="flex items-center justify-center">
-								<a href="#">
-									<div class="w-[1.5rem] sm:w-[2rem] h-max">
-										<img
-											class="object-contain"
-											src="@img/logo_5.png"
-											alt="logo"
-										/>
-									</div>
-								</a>
-							</li>
-							<li class="flex items-center justify-center">
-								<a href="#">
-									<div class="w-[1.5rem] sm:w-[2rem] h-max">
-										<img
-											class="object-contain"
-											src="@img/logo_6.png"
-											alt="logo"
-										/>
-									</div>
-								</a>
-							</li>
-							<li class="flex items-center justify-center">
-								<a href="#">
-									<div class="w-[1.5rem] sm:w-[2rem] h-max">
-										<img
-											class="object-contain"
-											src="@img/logo_7.png"
-											alt="logo"
-										/>
-									</div>
-								</a>
-							</li>
-							<li class="flex items-center justify-center">
-								<a href="#">
-									<div class="w-[1.5rem] sm:w-[2rem] h-max">
-										<img
-											class="object-contain"
-											src="@img/logo_8.png"
-											alt="logo"
-										/>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-			</main>
-			@@include('html/_footer.html',{})
-		</div>
-		@@include('html/_svg.html',{}) @@include('html/_js.html',{})
-	</body>
+                            </p>
+                            <div
+                                    class="bg-img absolute lg:-z-[2] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
+                            >
+                                <img
+                                        class="object-cover size-full"
+                                        src="@img/Advantages_4.png"
+                                        alt="#"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-[1.3rem] sm:py-[1.8rem]">
+            <div class="container">
+                <h2 data-aos="fade-up" data-aos-delay="200"
+                    class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-20"
+                >
+                    Наші партнери
+                </h2>
+                <div data-aos="fade-up" data-aos-delay="200" class="text-l text-center font-medium mb-32 lg:mb-50">
+                    Кожен проект - це твір мистецтвазвичайно без допомоги Ми не
+                    обходимося.
+                </div>
+                <ul data-aos="fade-up" data-aos-delay="200"
+                    class="flex flex-wrap gap-x-[.4rem] lg:gap-x-[1.1rem] gap-y-16 justify-center"
+                >
+                    <li class="flex items-center justify-center">
+                        <a href="#">
+                            <div class="w-[1.5rem] sm:w-[2rem] h-max">
+                                <img
+                                        class="object-contain"
+                                        src="@img/logo_1.png"
+                                        alt="logo"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a href="#">
+                            <div class="w-[1.5rem] sm:w-[2rem] h-max">
+                                <img
+                                        class="object-contain block"
+                                        src="@img/logo_2.png"
+                                        alt="logo"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a href="#">
+                            <div class="w-[1.5rem] sm:w-[2rem] h-max">
+                                <img
+                                        class="object-contain"
+                                        src="@img/logo_3.png"
+                                        alt="logo"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a href="#">
+                            <div class="w-[1.5rem] sm:w-[2rem] h-max">
+                                <img
+                                        class="object-contain"
+                                        src="@img/logo_4.png"
+                                        alt="logo"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a href="#">
+                            <div class="w-[1.5rem] sm:w-[2rem] h-max">
+                                <img
+                                        class="object-contain"
+                                        src="@img/logo_5.png"
+                                        alt="logo"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a href="#">
+                            <div class="w-[1.5rem] sm:w-[2rem] h-max">
+                                <img
+                                        class="object-contain"
+                                        src="@img/logo_6.png"
+                                        alt="logo"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a href="#">
+                            <div class="w-[1.5rem] sm:w-[2rem] h-max">
+                                <img
+                                        class="object-contain"
+                                        src="@img/logo_7.png"
+                                        alt="logo"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex items-center justify-center">
+                        <a href="#">
+                            <div class="w-[1.5rem] sm:w-[2rem] h-max">
+                                <img
+                                        class="object-contain"
+                                        src="@img/logo_8.png"
+                                        alt="logo"
+                                />
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    @@include('html/_footer.html',{})
+</div>
+@@include('html/_modal.htm',{})
+@@include('html/_svg.html',{})
+@@include('html/_js.html',{})
+</body>
 </html>

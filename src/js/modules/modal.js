@@ -1,16 +1,21 @@
+import {getElement} from "../core/index.js";
+
 class Modal {
-    constructor(selector) {
-        this.modal = document.querySelector(selector);
+    constructor(element) {
+        this.modal = element;
         this.modalBody = this.modal.querySelector(".modal__body");
         this.scrollPosition = scrollY || document.documentElement.scrollTop;
+        this.static = this.modal.dataset.static;
     }
 
     openModal() {
+        this.scrollPosition = scrollY || document.documentElement.scrollTop;
         this.modal.classList.add("show");
         this.modal.classList.remove("hide");
         document.body.classList.add("overlay");
         this.attachModalEvents(this.modal);
     }
+
     attachModalEvents() {
         if (this.modal.querySelector(".modal__close")) {
             this.modal
@@ -21,6 +26,8 @@ class Modal {
             })
 
         }
+        this.attachModalCloseBtns();
+
 
         document.addEventListener("keydown", (e) => {
             this.handleEscape(e);
@@ -31,10 +38,20 @@ class Modal {
         });
     }
 
+    attachModalCloseBtns() {
+        if (this.modal.querySelector("[data-modal-close]")) {
+            this.modal
+                .querySelectorAll("[data-modal-close]").forEach(closeBtn => {
+                closeBtn.addEventListener("click", () => {
+                    this.closeModal(this.modal);
+                });
+            })
+
+        }
+    }
+
     closeModal() {
         this.enableScrollAndSwipes()
-
-
         setTimeout(() => {
             this.modal.classList = "modal";
             this.modal.classList.add("hide");
@@ -44,10 +61,12 @@ class Modal {
         }, 0);
 
         this.detachModalEvents(this.modal);
+        if (!this.static) {
+            setTimeout(() => {
+                getElement('.modal__content .wrapper', this.modalBody).innerHTML = ``;
+            }, 250);
+        }
 
-        setTimeout(() => {
-            this.modalBody.firstElementChildinnerHTML = ``;
-        }, 250);
     }
 
     detachModalEvents() {
@@ -83,14 +102,16 @@ class Modal {
     }
 
     disableScrollAndSwipes() {
-        document.body.style.position = 'fixed';
-        document.body.style.top = `-${this.scrollPosition}px`;
+        // document.body.style.position = 'fixed';
+        document.body.style.overflow = 'hidden';
+        // document.body.style.top = `-${this.scrollPosition}px`;
     }
 
     enableScrollAndSwipes() {
-        document.body.style.position = 'relative';
-        document.body.style.top = '0';
-        window.scrollTo(0, this.scrollPosition);
+        // document.body.style.position = 'relative';
+        // document.body.style.top = '0';\
+        document.body.style.overflow = 'auto';
+        // window.scrollTo(0, this.scrollPosition);
 
     }
 

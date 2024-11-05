@@ -1,19 +1,24 @@
+import {getElement, getElements} from "./core/index.js";
+
 window['FLS'] = true
 // Підключення основного файлу стилів
 import '../scss/style.scss'
 import accordion from './modules/accordion.js'
 import * as flsFunctions from './core/functions.js'
-import { scrollToAnchor } from './modules/scrollToAnchor.js'
-import { headerFixed } from './modules/index.js'
+import {scrollToAnchor} from './modules/scrollToAnchor.js'
+import {headerFixed} from './modules/index.js'
 import burger from './modules/burger.js'
-import Swiper from 'swiper'
-import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import "aos/dist/aos.css";
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-cards'
-import { projects, advantages } from './modules/sliders.js'
+import {projects, advantages} from './modules/sliders.js'
 import HeaderComponent from './modules/HeaderComponent.js'
+import AOS from "aos";
+import modalsEvents from "./modules/modalsEvents.js";
+import modal from "./modules/modal.js";
+import Modal from "./modules/modal.js";
 
 /* Перевірка підтримки webp, додавання класу webp або no-webp для HTML */
 /* (i) необхідно для коректного відображення webp із css */
@@ -37,36 +42,48 @@ accordion('.accordion', '.accordion__header', '.accordion__content')
 accordion('.accordion-tab', '.accordion__header', '.accordion__content')
 
 window.addEventListener('DOMContentLoaded', () => {
-	try {
-		HeaderComponent()
-		scrollToAnchor()
-		projects()
-		advantages()
-		headerFixed()
-		burger()
-	} catch (e) {
-		console.log(e)
-	}
+    try {
+        const modal = new Modal(getElement('.modal'));
+        AOS.init(
+            {
+                once: true,
+            }
+        );
+        HeaderComponent()
+        scrollToAnchor()
+        projects()
+        advantages()
+        headerFixed()
+        burger()
+        getElements('[data-modal]').forEach((el) => {
+            el.addEventListener('click', (e) => {
+                modalsEvents(el.dataset.modal);
+                modal.openModal();
+            });
+        });
+    } catch (e) {
+        console.log(e)
+    }
 })
 
 function updateSwiperSlides() {
-	// Знаходимо контейнер .swiper-wrapper всередині секції .advantages
-	const wrapper = document.querySelector('.advantages .swiper-wrapper')
-	if (!wrapper) return // Перевірка наявності елемента
+    // Знаходимо контейнер .swiper-wrapper всередині секції .advantages
+    const wrapper = document.querySelector('.advantages .swiper-wrapper')
+    if (!wrapper) return // Перевірка наявності елемента
 
-	const slides = wrapper.children
+    const slides = wrapper.children
 
-	if (window.innerWidth < 1024) {
-		// Додаємо клас .swiper-slide при ширині менше 1024px
-		Array.from(slides).forEach(slide => {
-			slide.classList.add('swiper-slide')
-		})
-	} else {
-		// Видаляємо клас .swiper-slide при ширині 1024px або більше
-		Array.from(slides).forEach(slide => {
-			slide.classList.remove('swiper-slide')
-		})
-	}
+    if (window.innerWidth < 1024) {
+        // Додаємо клас .swiper-slide при ширині менше 1024px
+        Array.from(slides).forEach(slide => {
+            slide.classList.add('swiper-slide')
+        })
+    } else {
+        // Видаляємо клас .swiper-slide при ширині 1024px або більше
+        Array.from(slides).forEach(slide => {
+            slide.classList.remove('swiper-slide')
+        })
+    }
 }
 
 // Запускаємо перевірку при завантаженні сторінки

@@ -1,5 +1,5 @@
 import IMask from "imask";
-import modalsEvents from "./modalsEvents.js";
+import modalsEvents, {renderAnswerModal, renderCallbackAnswerModal} from "./modalsEvents.js";
 import Modal from "./modal.js";
 import {translateFields, lang} from "./base.js";
 
@@ -11,6 +11,7 @@ let maskOptions = {
     mask: "+38 (000) 000 - 0000",
     lazy: false,
 };
+
 class Form {
     constructor(form) {
         this.form = getElement(form);
@@ -54,11 +55,11 @@ class Form {
             } else {
                 this.invalid(input);
             }
-            getElement('.form-item_message', input.closest('.form__item')).innerHTML = isValid ? "" : templateEmail;
+            getElement('.form__message', input.closest('.form__item')).innerHTML = isValid ? "" : templateEmail;
         });
         input.addEventListener("input", () => {
             this.valid(input);
-            getElement('.form-item_message', input.closest('.form__item')).innerHTML = "";
+            getElement('.form__message', input.closest('.form__item')).innerHTML = "";
         });
     }
 
@@ -75,7 +76,6 @@ class Form {
                 this.valid(input);
                 isValid = true;
             } else {
-                isValid = false;
                 this.invalid(input);
             }
             getElement('.form-item__message', input.closest('.form-item')).innerText = isValid ? "" : template;
@@ -193,8 +193,7 @@ class Form {
             });
 
             if (response.status !== 200) throw new Error('error');
-            location.href = "/thank-you";
-            // renderAnswerModal(true, btn.dataset.submit);
+            location.href = '/thank-you/';
             // this.resetForm(btn);
 
         } catch (error) {
@@ -275,10 +274,9 @@ class Form {
         this.checkInputs();
         this.form.addEventListener("submit", (e) => {
             e.preventDefault();
-            console.log(this.validateEmptyField())
             if (this.validateEmptyField()) {
                 e.submitter.classList.add("disabled");
-                e.submitter.innerHTML = `<svg class="w-24 h-24 fill-white">
+                e.submitter.innerHTML = `<svg class="w-24 h-24 mx-auto fill-white">
                     <use xlink:href="#preloader-spinner"></use>
                 </svg>`;
                 this.inputs.forEach(input => {
@@ -291,7 +289,6 @@ class Form {
 }
 
 export default Form;
-
 
 
 function activePhoneInput(input, mask) {
@@ -321,14 +318,14 @@ function valid(input) {
     const submitBtn = input.closest('form').querySelector('input[type="submit"]');
     input.closest('.form-item').classList.add("valid");
     input.closest('.form-item').classList.remove("invalid");
-    if ( submitBtn.classList.contains('disabled')) submitBtn.classList.remove('disabled')
+    if (submitBtn.classList.contains('disabled')) submitBtn.classList.remove('disabled')
 }
 
 function invalid(input) {
     const submitBtn = input.closest('form').querySelector('input[type="submit"]');
     input.closest('.form-item').classList.add("invalid");
     input.closest('.form-item').classList.remove("valid");
-    if (!submitBtn.classList.contains('disabled'))submitBtn.classList.add('disabled')
+    if (!submitBtn.classList.contains('disabled')) submitBtn.classList.add('disabled')
 }
 
 export {activePhoneInput, valid, invalid, maskOptions};
