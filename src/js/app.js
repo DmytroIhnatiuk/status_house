@@ -19,6 +19,7 @@ import AOS from 'aos'
 import modalsEvents from './modules/modalsEvents.js'
 import modal from './modules/modal.js'
 import Modal from './modules/modal.js'
+import Form from "./modules/Form.js";
 
 /* Перевірка підтримки webp, додавання класу webp або no-webp для HTML */
 /* (i) необхідно для коректного відображення webp із css */
@@ -71,6 +72,7 @@ window.addEventListener('DOMContentLoaded', () => {
 				modal.openModal()
 			})
 		})
+		new Form('.form-footer').init()
 	} catch (e) {
 		console.log(e)
 	}
