@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ua">
+	@@include('html/_head.html',{ "title":"about us" })
+	<body class="body">
+		<div class="page-container">
+			@@include('html/_header.html',{})
+			<main>
+				<section
+					class="lg:h-[100vh] h-[6.7rem] sm:h-[8rem] pt-[var(--header-height)] pb-[var(--section-padding)] lg:pb-[.9rem] promo relative flex items-end overflow-hidden"
+				>
+					<div class="container">
+						<picture>
+							<source srcset="@img/about_bg.jpg" media="(min-width: 640px)" />
+							<img
+								src="@img/about_bg_sm.png"
+								alt="Promo Background"
+								class="promo-bg"
+							/>
+						</picture>
+						<div class="text-white py-24 relative z-10">
+							<h1
+								data-aos="fade-up"
+								data-aos-delay="500"
+								class="max-w-[8rem] mb-16 lg:mb-0"
+							>
+								Будуємо мрії, що стають
+								<span class="sm:block sm:font-bold">реальністю</span>
+							</h1>
+						</div>
+					</div>
+				</section>
+				<section class="py-[1rem] sm:py-[1.3rem]">
+					<div class="container">
+						<div
+							class="grid sm:grid-cols-2 gap-20 gap-y-32 pb-32 border-b border-accent border-solid font-medium mb-24"
+						>
+							<h2 class="h3 lg:text-[.36rem]">
+								Компанія “Status House” — це ваш надійний партнер у сучасному
+								будівництві
+							</h2>
+							<p>
+								Ми пропонуємо повний цикл послуг: від концептуального
+								проектування до завершення будівництва під ключ. Наші клієнти
+								можуть розраховувати на індивідуальний підхід, максимальну увагу
+								до деталей та реалізацію найсміливіших ідей.
+							</p>
+						</div>
+						<div class="swiper mb-32" data-swiper="aboutSlider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="sm:h-[3rem] h-[2.3rem] image">
+										<img src="@img/about-slider_1.png" alt="project photo" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sm:h-[3rem] h-[2.3rem] image">
+										<img src="@img/about-slider_2.png" alt="project photo" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sm:h-[3rem] h-[2.3rem] image">
+										<img src="@img/about-slider_3.png" alt="project photo" />
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="sm:h-[3rem] h-[2.3rem] image">
+										<img src="@img/about-slider_3.png" alt="project photo" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="flex gap-20 justify-center">
+							<button
+								class="size-[.48rem] sm:size-[.62rem] border border-black border-solid rounded flex justify-center items-center aboutSlider-prev lg:hover:opacity-70 transition-opacity"
+							>
+								<svg
+									class="size-24 flex justify-center items-center fill-none stroke-[var(--black)] rotate-180"
+								>
+									<use href="#shevron-icon"></use>
+								</svg>
+							</button>
+							<button
+								class="size-[.48rem] sm:size-[.62rem] border border-black border-solid rounded flex justify-center items-center aboutSlider-next lg:hover:opacity-70 transition-opacity"
+							>
+								<svg
+									class="size-24 flex justify-center items-center fill-none stroke-[var(--black)]"
+								>
+									<use href="#shevron-icon"></use>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section
+					class="h-[6.3rem] p-[var(--section-padding)] lg:pb-[.9rem] promo relative flex items-center overflow-hidden"
+				>
+					<div class="container">
+						<picture>
+							<source srcset="@img/slogan.jpg" media="(min-width: 640px)" />
+							<img
+								src="@img/slogan_sm.jpg"
+								alt="Promo Background"
+								class="promo-bg"
+							/>
+						</picture>
+
+						<h2
+							data-aos="fade-up"
+							data-aos-delay="500"
+							class="text-center h3 text-white font-medium"
+						>
+							Ваш новий рівень життя
+							<span class="sm:block">починається тут</span>
+						</h2>
+					</div>
+				</section>
+				<section class="py-100 sm:pt-[2rem] sm:pb-[1.3rem]">
+					<div class="container">
+						<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-20 gap-y-32">
+							<div
+								class="image h-[3.8rem] lg:h-[4.8rem] sm:col-start-1 sm:col-end-3 lg:col-end-2"
+							>
+								<img src="@img/pool.png" alt="house" />
+							</div>
+							<div>
+								<h2
+									class="h3 mb-24 font-medium lg:text-[.36rem] lg:pt-[.64rem]"
+								>
+									Що нас вирізняє?Клієнтоорієнтованість на всіх етапах
+								</h2>
+								<div class="sm:text-l mb-16">
+									Ми не просто будуємо будинки — ми створюємо простір, який
+									ідеально відповідає вашим потребам і стилю життя.
+								</div>
+								<div class="sm:text-l font-medium">
+									Наша мета — забезпечити не просто якісне будівництво, а
+									максимальний комфорт і задоволення для кожного клієнта
+								</div>
+							</div>
+							<div
+								class="image h-[2.2rem] sm:h-[3.56rem] ml-auto w-[2.7rem] sm:w-full"
+							>
+								<img src="@img/orientation.png" alt="house" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="bg-black py-[.5rem] sm:py-[.9rem] text-white">
+					<div class="container">
+						<div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-20">
+							<div class="font-medium">
+								<h2 class="mb-16 sm:mb-32">Наші цінності</h2>
+								<div>
+									У Status House ми віримо, що успішний проєкт починається з
+									налагодження комунікації з клієнтом
+								</div>
+							</div>
+							<div
+								class="grid lg:grid-cols-2 lg:col-start-2 lg:col-end-4 gap-x-20 gap-y-24 sm:gap-y-[.45rem]"
+							>
+								<div class="px-16 border-l border-accent border-solid pb-8">
+									<h3
+										class="lg:text-[.52rem] h2 text-accent font-medium uppercase mb-4"
+									>
+										01
+									</h3>
+									<h4 class="font-bold mb-4">Квалітет</h4>
+									<p>
+										Ми прагнемо до досконалості в кожному проекті, щоб
+										забезпечити нашим клієнтам найвищий рівень комфорту та
+										безпеки
+									</p>
+								</div>
+								<div class="px-16 border-l border-accent border-solid pb-8">
+									<h3
+										class="lg:text-[.52rem] h2 text-accent font-medium uppercase mb-4"
+									>
+										02
+									</h3>
+									<h4 class="font-bold mb-4">Індивідуальний підхід</h4>
+									<p>
+										Ми розуміємо, що кожен клієнт унікальний, тому ми пропонуємо
+										індивідуальні рішення, які відповідають їхнім потребам та
+										очікуванням
+									</p>
+								</div>
+								<div class="px-16 border-l border-accent border-solid pb-8">
+									<h3
+										class="lg:text-[.52rem] h2 text-accent font-medium uppercase mb-4"
+									>
+										03
+									</h3>
+									<h4 class="font-bold mb-4">Компетентність</h4>
+									<p>
+										Наші спеціалісти мають багаторічний досвід та високий рівень
+										кваліфікації, щоб забезпечити успіх кожного проекту
+									</p>
+								</div>
+								<div class="px-16 border-l border-accent border-solid pb-8">
+									<h3
+										class="lg:text-[.52rem] h2 text-accent font-medium uppercase mb-4"
+									>
+										04
+									</h3>
+									<h4 class="font-bold mb-4">Відкритість та довіра</h4>
+									<p>
+										Чесність є ключем до успішного проєкту. Ми відкритими, чесні
+										та надійні у наших відносинах з клієнтами, партнерами та
+										колегами, і завжди прагнемо до взаємної довіри
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-aos="fade-up" class="py-[1.3rem] sm:py-[1.8rem]">
+					<div class="container">
+						<h2
+							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
+						>
+							Зробіть перший крок! Залиште свої контактні дані і отримайте
+							розрахунок кошторису
+						</h2>
+						<form
+							action="#"
+							class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
+						>
+							<div class="flex flex-col">
+								<label for="name" class="text-s mb-4"> Ім’я</label>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<div class="flex flex-col">
+								<label for="phone_1" class="text-s mb-4"> Номер телефона</label>
+								<input
+									type="text"
+									name="phone_1 "
+									id="phone_1"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<div class="flex flex-col">
+								<label for="mail" class="text-s mb-4"> E-mail</label>
+								<input
+									type="text"
+									name="mail"
+									id="mail"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<button
+								class="text-s flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient mt-auto"
+							>
+								<span>залишити заявку</span>
+							</button>
+						</form>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.html',{})
+		</div>
+		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
+		@@include('html/_js.html',{})
+	</body>
+</html>

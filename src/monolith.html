@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="ua">
+	@@include('html/_head.html',{ "title":"monolit" })
+	<body class="body">
+		<div class="page-container">
+			@@include('html/_header.html',{})
+			<main>
+				<section
+					class="lg:h-[100vh] h-[6.7rem] sm:h-[8rem] pt-[var(--header-height)] pb-[var(--section-padding)] lg:pb-[.9rem] promo relative flex items-end overflow-hidden"
+				>
+					<div class="container">
+						<picture>
+							<source srcset="@img/monolit_bg.jpg" media="(min-width: 640px)" />
+							<img
+								src="@img/monolit_bg_sm.jpg"
+								alt="Promo Background"
+								class="promo-bg"
+							/>
+						</picture>
+						<div
+							class="text-white py-24 relative z-10 grid lg:grid-cols-3 gap-16"
+							data-aos="fade-up"
+							data-aos-delay="500"
+						>
+							<h1 class="tracking-tight">Монолітні роботи</h1>
+							<div class="font-medium text-l lg:text-[.2rem]">
+								Наша команда успішно реалізовує проєкти  з використанням
+								монолітно-каркасної технологіяї будь-якої складності вже понад
+								12 років
+							</div>
+							<button
+								data-modal="callback"
+								class="lg:justify-self-end text-s w-[2.48rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient"
+							>
+								<span>Отримати консультацію</span>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="pt-[1.3rem] pb-100 sm:pb-[1.3rem]">
+					<div class="container">
+						<div class="grid lg:grid-cols-2 gap-x-20 gap-y-32">
+							<div>
+								<h2 class="h3 font-medium mb-24 sm:mb-32">
+									Монолітні роботи від Status House
+								</h2>
+								<p class="pb-16 font-medium">
+									Status House пропонує професійне виконання монолітних робіт на
+									будь-яких типах об’єктів. Ми реалізуємо повний комплекс робіт,
+									незалежно від складності завдань та масштабів проекту.
+									Використовуючи сучасні технології та якісні матеріали, наша
+									команда забезпечує високу точність і надійність конструкцій,
+									що відповідають всім будівельним стандартам.
+								</p>
+								<p class="mb-24">
+									Ми виконуємо монолітні роботи для житлових, комерційних і
+									промислових об’єктів, гарантуючи довговічність і стійкість
+									будівель. Наша команда має великий досвід у виконанні навіть
+									найскладніших проектів, і ми готові втілювати ваші ідеї в
+									життя.
+								</p>
+								<button
+									data-modal="callback"
+									class="text-s w-[2.48rem] flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient"
+								>
+									<span>залишити заявку</span>
+								</button>
+							</div>
+							<div class="image h-[1.8rem] sm:h-[3.8rem]">
+								<img src="@img/monolit_3.jpg" alt="building" />
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="bg-black py-[.5rem] sm:py-[.9rem] text-white">
+					<div class="container">
+						<div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-20">
+							<div class="font-medium">
+								<h2 class="mb-16 sm:mb-32">Переваги монолітного каркасу</h2>
+							</div>
+							<div
+								class="grid lg:grid-cols-2 lg:col-start-2 lg:col-end-4 gap-x-20 gap-y-24 sm:gap-y-[.45rem]"
+							>
+								<div class="px-16 border-l border-accent border-solid pb-8">
+									<h3
+										class="lg:text-[.52rem] h2 text-accent font-medium uppercase mb-4"
+									>
+										01
+									</h3>
+									<h4 class="font-bold mb-4">Міцність і надійність</h4>
+									<p>
+										Монолітні конструкції мають високу несучу здатність і
+										витримують значні навантаження, забезпечуючи довговічність
+										будівлі
+									</p>
+								</div>
+								<div class="px-16 border-l border-accent border-solid pb-8">
+									<h3
+										class="lg:text-[.52rem] h2 text-accent font-medium uppercase mb-4"
+									>
+										02
+									</h3>
+									<h4 class="font-bold mb-4">Гнучкість у плануванні</h4>
+									<p>
+										Монолітний каркас дозволяє створювати просторі приміщення
+										без додаткових опорних стін, що надає більше свободи в
+										плануванні інтер’єру
+									</p>
+								</div>
+								<div class="px-16 border-l border-accent border-solid pb-8">
+									<h3
+										class="lg:text-[.52rem] h2 text-accent font-medium uppercase mb-4"
+									>
+										03
+									</h3>
+									<h4 class="font-bold mb-4">Швидкість будівництва</h4>
+									<p>
+										Зведення монолітного каркасу може бути швидшим у порівнянні
+										з іншими технологіями завдяки можливості безперервного
+										виконання робіт
+									</p>
+								</div>
+								<div class="px-16 border-l border-accent border-solid pb-8">
+									<h3
+										class="lg:text-[.52rem] h2 text-accent font-medium uppercase mb-4"
+									>
+										04
+									</h3>
+									<h4 class="font-bold mb-4">
+										Індивідуальні архітектурні рішення
+									</h4>
+									<p>
+										Монолітний каркас дозволяє реалізувати складні архітектурні
+										форми та проєкти з нестандартними конструкціями.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="py-[1rem] sm:py-[1.3rem]">
+					<div class="container">
+						<div class="flex items-center justify-between mb-32 sm:mb-40">
+							<h2 class="font-medium">Наші послуги включають</h2>
+							<button
+								class="text-s lg:flex items-center justify-center uppercase rounded-30 h-[.51rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition hidden"
+							>
+								<span>Отримати консультацію </span>
+							</button>
+						</div>
+						<div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-16 sm:gap-20">
+							<div
+								class="p-24 border border-accent border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-accent border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-accent">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">
+											Проєктування монолітних конструкцій
+										</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-accent after:w-2 after:bg-accent after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Розробка проєктної документації з урахуванням
+											архітектурних та технічних вимог</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-accent border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-accent border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-accent">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Фундаментні роботи</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-accent after:w-2 after:bg-accent after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Влаштування монолітних фундаментів різної складності,
+											включаючи стрічкові, плитні та свайні фундаменти</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-accent border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-accent border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-accent">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Зведення монолітного каркасу</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-accent after:w-2 after:bg-accent after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Виготовлення несучих стін, колон, плит перекриття та інших
+											елементів каркасу</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-accent border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-accent border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-accent">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Армування конструкцій</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-accent after:w-2 after:bg-accent after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Встановлення арматурних каркасів для забезпечення міцності
+											та довговічності конструкцій</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-accent border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-accent border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-accent">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Опалубочні роботи</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-accent after:w-2 after:bg-accent after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Монтаж і демонтаж опалубки, необхідної для створення форми
+											залізобетонних елементів</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-accent border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-accent border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-accent">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Заливка бетону</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-accent after:w-2 after:bg-accent after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Підготовка та заливка бетонних сумішей для створення
+											монолітних конструкцій, контроль за якістю матеріалу та
+											укладки</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-accent border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-accent border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-accent">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Гідроізоляція та теплоізоляція</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-accent after:w-2 after:bg-accent after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Захист монолітних конструкцій від вологи та тепловтрат для
+											забезпечення довговічності та енергоефективності
+											будівлі</span
+										>
+									</div>
+								</div>
+							</div>
+							<div
+								class="p-24 border border-accent border-solid sm:text-center flex flex-col justify-center h-full"
+							>
+								<div
+									class="size-[.42rem] border-accent border border-solid rounded mb-8 hidden sm:flex justify-center items-center mx-auto"
+								>
+									<svg class="size-[.32rem] fill-none stroke-accent">
+										<use href="#chek-icon"></use>
+									</svg>
+								</div>
+
+								<div class="accordion accordion-services">
+									<div
+										class="accordion-header flex items-center justify-between sm:block"
+									>
+										<h4 class="font-bold">Контроль якості</h4>
+
+										<span
+											class="size-40 relative flex items-center justify-center before:w-[.22rem] before:h-2 before:bg-accent after:w-2 after:bg-accent after:absolute sm:hidden"
+										></span>
+									</div>
+
+									<div class="font-medium accordion-content sm:max-h-max">
+										<span class="block pt-8">
+											Проведення випробувань і перевірок на міцність і
+											надійність монолітних конструкцій відповідно до
+											стандартів</span
+										>
+									</div>
+								</div>
+							</div>
+
+							<button
+								class="text-s flex items-center justify-center uppercase rounded-30 h-[.51rem] border border-black border-solid px-16 py-12 text-black font-medium bg-transparent hover:bg-black hover:text-white btn-transition lg:hidden w-full sm:w-1/2 col-start-1 sm:col-end-3 mx-auto"
+							>
+								<span>Отримати консультацію </span>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section
+					data-aos="fade-up"
+					data-aos-duration="1200"
+					class="relative h-[6.68rem] sm:h-[7.1rem] text-white"
+				>
+					<h2
+						class="absolute z-10 top-50 sm:top-[.75rem] font-medium left-[var(--container-gap)]"
+					>
+						Переваги компанії
+					</h2>
+					<div
+						class="flex gap-20 justify-center absolute bottom-24 w-full z-20"
+					>
+						<button
+							class="size-[.48rem] sm:size-[.62rem] border border-white border-solid rounded flex justify-center items-center advantages-prev lg:hover:opacity-70 transition-opacity"
+						>
+							<svg
+								class="size-24 flex justify-center items-center fill-none stroke-[var(--white)] rotate-180"
+							>
+								<use href="#shevron-icon"></use>
+							</svg>
+						</button>
+						<button
+							class="size-[.48rem] sm:size-[.62rem] border border-white border-solid rounded flex justify-center items-center advantages-next lg:hover:opacity-70 transition-opacity"
+						>
+							<svg
+								class="size-24 flex justify-center items-center fill-none stroke-[var(--white)]"
+							>
+								<use href="#shevron-icon"></use>
+							</svg>
+						</button>
+					</div>
+					<div
+						class="h-full lg:flex swiper advantages"
+						data-swiper="advantages"
+					>
+						<div class="swiper-wrapper lg:px-[var(--container-gap)] w-[100vw]">
+							<div>
+								<div
+									class="bg-img hidden lg:block absolute -z-[5] top-0 right-0 bottom-0 left-0 w-full"
+								>
+									<img
+										class="object-cover size-full hidden lg:block"
+										src="@img/Advantages.png"
+										alt="#"
+									/>
+								</div>
+								<div
+									class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
+								>
+									<div class="h4 font-bold z-10">Дотримання термінів</div>
+									<p
+										class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
+									>
+										<span class="block pt-16">
+											Ми дотримуємося договору та затвердженого кошторису,
+											термінів, не виставляємо неузгоджені платежі. За потреби
+											завжди пропонуємо вибір
+										</span>
+									</p>
+									<div
+										class="bg-img absolute lg:-z-[5] top-0 right-0 bottom-0 left-0 w-full lg:opacity-1 transition-opacity duration-500 ease-linear"
+									>
+										<img
+											class="object-cover size-full"
+											src="@img/Advantages.png"
+											alt="#"
+										/>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div
+									class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
+								>
+									<div class="h4 font-bold z-10">Гарантія</div>
+									<p
+										class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
+									>
+										<span class="block pt-16">
+											Загальна гарантія – 5 років. Гарантія на конструкцію 10
+											років.
+										</span>
+									</p>
+									<div
+										class="bg-img absolute lg:-z-[5] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
+									>
+										<img
+											class="object-cover size-full"
+											src="@img/Advantages_2.png"
+											alt="#"
+										/>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div
+									class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end border-r border-accent border-solid lg:w-[3.44rem] hover-advantages relative lg:static"
+								>
+									<div class="h4 font-bold z-10">Ціна</div>
+									<p
+										class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
+									>
+										<span class="block pt-16">
+											Ціна виправдана якістю робіт. Застосовуються лише якісні
+											матеріали та висока кваліфікація
+										</span>
+									</p>
+									<div
+										class="bg-img absolute lg:-z-[3] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
+									>
+										<img
+											class="object-cover size-full"
+											src="@img/Advantages_3.png"
+											alt="#"
+										/>
+									</div>
+								</div>
+							</div>
+							<div>
+								<div
+									class="px-24 py-100 sm:py-[1.3rem] h-full lg:py-40 flex flex-col justify-end :w-[3.44rem] hover-advantages relative lg:static"
+								>
+									<div class="h4 font-bold z-10">Контроль</div>
+									<p
+										class="block overflow-hidden z-10 transition-[max-height] duration-300 ease-linear lg:max-h-0 lg:h-full"
+									>
+										<span class="block pt-16">
+											Забезпечуємо постійний дистанційний контроль за допомогою
+											відео, фотографій та трансляцій безпосередньо з
+											будівельного майданчика
+										</span>
+									</p>
+									<div
+										class="bg-img absolute lg:-z-[2] top-0 right-0 bottom-0 left-0 w-full lg:opacity-0 transition-opacity duration-500 ease-linear"
+									>
+										<img
+											class="object-cover size-full"
+											src="@img/Advantages_4.png"
+											alt="#"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section
+					data-aos="fade-up"
+					class="py-[1.3rem] sm:py-[1.8rem] gap-16 sm:gap-20"
+				>
+					<div class="container">
+						<h2
+							class="h3 font-medium max-w-[7.45rem] mx-auto text-center mb-32"
+						>
+							Зробіть перший крок! Залиште свої контактні дані і отримайте
+							розрахунок кошторису
+						</h2>
+						<form
+							action="#"
+							class="grid sm:grid-cols-2 lg:grid-cols-4 gap-16 lg:px-[1.15rem] px-[.3rem]"
+						>
+							<div class="flex flex-col">
+								<label for="name" class="text-s mb-4"> Ім’я</label>
+								<input
+									type="text"
+									name="name"
+									id="name"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<div class="flex flex-col">
+								<label for="phone_1" class="text-s mb-4"> Номер телефона</label>
+								<input
+									type="text"
+									name="phone_1 "
+									id="phone_1"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<div class="flex flex-col">
+								<label for="mail" class="text-s mb-4"> E-mail</label>
+								<input
+									type="text"
+									name="mail"
+									id="mail"
+									class="text-l h-[.54rem] border border-solid bg-transparent p-12 flex items-center rounded-30"
+								/>
+							</div>
+							<button
+								class="text-s flex items-center justify-center uppercase rounded-30 h-[.54rem] px-16 py-12 text-white font-medium btn-gradient mt-auto"
+							>
+								<span>залишити заявку</span>
+							</button>
+						</form>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.html',{})
+		</div>
+		@@include('html/_modal.htm',{}) @@include('html/_svg.html',{})
+		@@include('html/_js.html',{})
+	</body>
+</html>

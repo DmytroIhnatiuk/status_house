@@ -1,0 +1,23 @@
+.accordion {
+	&-header {
+		cursor: pointer;
+		span {
+			&:after {
+				height: 0.22rem;
+				transition: height 0.3s ease-out;
+			}
+		}
+		&.active {
+			span {
+				&:after {
+					height: 0;
+				}
+			}
+		}
+	}
+	&-content {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-out;
+	}
+}

@@ -1,12 +1,5 @@
 import Swiper from 'swiper'
-import {
-	Autoplay,
-	Navigation,
-	Pagination,
-	EffectFade,
-	EffectCards,
-	Grid,
-} from 'swiper/modules'
+import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper/modules'
 import { getElement, getElements } from '../core/index.js'
 
 function projects() {
@@ -42,5 +35,26 @@ function advantages() {
 		},
 	})
 }
+function aboutSlider() {
+	if (!getElement('[data-swiper="aboutSlider"]')) return
+	new Swiper('[data-swiper="aboutSlider"]', {
+		modules: [Navigation],
+		slidesPerView: 1,
+		spaceBetween: 20,
+		breakpoints: {
+			640: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 3,
+			},
+		},
+		loop: true,
+		navigation: {
+			nextEl: '.aboutSlider-next',
+			prevEl: '.aboutSlider-prev',
+		},
+	})
+}
 
-export { projects, advantages }
+export { projects, advantages, aboutSlider }
